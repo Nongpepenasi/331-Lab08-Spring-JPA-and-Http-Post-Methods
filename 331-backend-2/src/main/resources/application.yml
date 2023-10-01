@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    active:
+      - db
+  datasource:
+    url:
+      jdbc:mysql://localhost:3306/selabdb2?createDatabaseIfNotExist=true&autoReconnect=true&useSSL=false&useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: create
